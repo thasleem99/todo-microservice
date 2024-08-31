@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 app = Flask(__name__) 
 app.testing = True
-todos = []
+todos = [{'task': 'Write unit tests'}]
 
 @app.route('/todos', methods=['GET'])
 def get_todos():
