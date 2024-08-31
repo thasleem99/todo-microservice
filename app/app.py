@@ -5,6 +5,7 @@ todos = []
 
 @app.route('/todos', methods=['GET'])
 def get_todos():
+    print("hello")
     return jsonify(todos)
 
 @app.route('/todos', methods=['POST'])
